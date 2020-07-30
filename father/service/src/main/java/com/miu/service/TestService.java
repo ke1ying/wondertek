@@ -12,10 +12,12 @@ public abstract class TestService<T> {
 
     protected void setData(List<T> data){
         //设置data
+        System.out.println("设置data");
     };
 
     protected void downloadExcel(){
         //下载excel
+        System.out.println("下载excel");
     };
 
     protected abstract List<T> getData();
