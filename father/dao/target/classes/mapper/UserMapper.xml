@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.miu.dao.mapper.UserMapper">
+
+    <select id="selectAll" resultType="com.miu.entity.User">
+        select Sname from user WHERE  SID = '010';
+    </select>
+
+    <select id="selectById" resultType="com.miu.entity.User">
+         select Sname from user WHERE  SID = '010';
+    </select>
+</mapper>
