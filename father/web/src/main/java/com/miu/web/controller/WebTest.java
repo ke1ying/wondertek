@@ -24,9 +24,6 @@ public class WebTest {
     private ServiceTest serviceTest;
 
     @Autowired
-    private TestSchedule testSchedule;
-
-    @Autowired
     private TestService testService;
 
     @RequestMapping("/test")
