@@ -39,6 +39,7 @@ public class WebTest {
     @RequestMapping("/wondertek")
     @ResponseBody
     public void wondertek() {
+        //new TestStaticBlock().test();
         testService.exportExcel();
     }
 
