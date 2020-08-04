@@ -11,4 +11,8 @@
     <select id="selectById" resultType="com.miu.entity.User">
          select Sname from user WHERE  SID = '010';
     </select>
+
+    <insert id="insert" parameterType="com.miu.entity.User">
+        insert into user (name,sex) values (#{name},#{sex});
+    </insert>
 </mapper>

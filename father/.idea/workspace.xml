@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="优化">
+      <change afterPath="$PROJECT_DIR$/.idea/father.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/WebTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/util/RedisTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/util/RedisTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ServletTestImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ServletTestImlp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -20,7 +34,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="D:/apache-maven-3.6.1" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.1" />
         <option name="userSettingsFile" value="D:\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -32,27 +46,28 @@
   </component>
   <component name="ProjectId" id="1fOrxVRzcY5r1PRvFeIoLVLpMvg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.miu.service" />
       <recent name="com.miu.service.impl" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -74,6 +89,12 @@
       <option name="presentableId" value="Default" />
       <updated>1596100226091</updated>
       <workItem from="1596100227555" duration="1045000" />
+      <workItem from="1596103527340" duration="484000" />
+      <workItem from="1596156326688" duration="692000" />
+      <workItem from="1596157115157" duration="2252000" />
+      <workItem from="1596159572185" duration="4379000" />
+      <workItem from="1596524019672" duration="2342000" />
+      <workItem from="1596526425344" duration="1039000" />
     </task>
     <task id="LOCAL-00001" summary="抽象类用法">
       <created>1596100442953</created>
@@ -89,11 +110,25 @@
       <option name="project" value="LOCAL" />
       <updated>1596101264724</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="优化">
+      <created>1596156388940</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596156388940</updated>
+    </task>
+    <task id="LOCAL-00004" summary="双亲委派测试">
+      <created>1596524303431</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596524303431</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -105,9 +140,102 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="抽象类用法" />
-    <option name="LAST_COMMIT_MESSAGE" value="抽象类用法" />
+    <MESSAGE value="优化" />
+    <MESSAGE value="双亲委派测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="双亲委派测试" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1596524797001">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596524797001" />
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1596524302103">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596524302103" />
+    <state x="129" y="54" key="DiffContextDialog" timestamp="1596524291668">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1596524291668" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1596526890502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1596526890502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1596526890502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1596526890502">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1596526389418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1596526389418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1596526389418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1596526389418">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1596526389434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
+    <state width="1323" height="223" key="GridCell.Tab.2.center" timestamp="1596526389434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
+    <state width="1323" height="223" key="GridCell.Tab.2.left" timestamp="1596526389434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
+    <state width="1323" height="223" key="GridCell.Tab.2.right" timestamp="1596526389434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1596524308414">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596524308414" />
+    <state x="390" y="150" key="git4idea.merge.GitPullDialog" timestamp="1596156355268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1596156355268" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1596177959194">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596177959194" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/TestStaticBlock.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/TestStaticBlock.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

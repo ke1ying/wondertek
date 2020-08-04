@@ -40,7 +40,10 @@ public class WebTest {
     @ResponseBody
     public void wondertek() {
         //new TestStaticBlock().test();
-        testService.exportExcel();
+        //testService.exportExcel();
+
+        //存储大数据1000万条数据
+        serviceTest.saveNums();
     }
 
 }

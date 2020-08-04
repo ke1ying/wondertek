@@ -2,23 +2,23 @@ package com.miu.entity;
 
 public class User {
 
-    private String Sname;
+   private String name;
 
-//    private Integer Sage;
+   private Integer sex;
 
-    public String getSname() {
-        return Sname;
+    public String getName() {
+        return name;
     }
 
-    public void setSname(String sname) {
-        Sname = sname;
+    public void setName(String name) {
+        this.name = name;
     }
 
-  /*  public Integer getSage() {
-        return Sage;
+    public Integer getSex() {
+        return sex;
     }
 
-    public void setSage(Integer sage) {
-        Sage = sage;
-    }*/
+    public void setSex(Integer sex) {
+        this.sex = sex;
+    }
 }

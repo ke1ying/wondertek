@@ -7,4 +7,6 @@ public interface ServiceTest {
     User showService();
 
     void testRedis();
+
+    void saveNums();
 }
