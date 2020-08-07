@@ -82,12 +82,19 @@
         </dependency>
     </dependencies>
     <build>
-<!--        <resources>
-            <resource>
+        <resources>
+         <!--   <resource>
                 <directory>src/main/resources</directory>
                 <filtering>true</filtering>
+            </resource>-->
+            <resource>
+                <directory>${project.basedir}/properties</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*.properties</include>
+                </includes>
             </resource>
-        </resources>-->
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
