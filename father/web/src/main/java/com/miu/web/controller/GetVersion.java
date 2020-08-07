@@ -29,6 +29,7 @@ public class GetVersion {
     @ResponseBody
     public String getVersion() throws Exception {
         System.out.println("versionUrl:" + versionUrl);
+        return versionUrl;
     /*    String rootPath = System.getProperty("user.dir");
         System.out.println("rootPath:" + rootPath);
         MavenXpp3Reader reader = new MavenXpp3Reader();
@@ -38,7 +39,7 @@ public class GetVersion {
         String versionT = model.getVersion();//获取版本号
         System.out.println("version:" + versionT);*/
         //查看jar包里面pom.properties版本号
-        String jarPath = GetVersion.class.getProtectionDomain().getCodeSource().getLocation().getFile();
+      /*  String jarPath = GetVersion.class.getProtectionDomain().getCodeSource().getLocation().getFile();
         jarPath = java.net.URLDecoder.decode(jarPath, "UTF-8");
         System.out.println("jarPath:" + jarPath);
         try {
@@ -64,7 +65,7 @@ public class GetVersion {
             Model model = reader.read(new FileReader(new File(basePath + "\\pom.xml")));
             String version = model.getVersion();
             return version;
-        }
+        }*/
     }
 
     /**
