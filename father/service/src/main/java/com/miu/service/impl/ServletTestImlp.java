@@ -5,6 +5,7 @@ import com.miu.dao.mapper.UserTestMapper;
 import com.miu.entity.User;
 import com.miu.entity.UserTest;
 import com.miu.service.ServiceTest;
+import com.miu.service.util.RedisTemplateUtil;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +26,9 @@ public class ServletTestImlp implements ServiceTest {
 
     @Resource
     private UserMapper userMapper;
+
+    @Autowired
+    private RedisTemplateUtil redisTemplateUtil;
 
     @Resource
     private UserTestMapper userTestMapper;
@@ -76,25 +80,28 @@ public class ServletTestImlp implements ServiceTest {
 
     @Override
     public void getUserAll() {
-        List<UserTest> list = redisTemplate.opsForList().range("userList",0,-1);
-        if(list.size() == 0){
+        List<UserTest> list = redisTemplate.opsForList().range("userList", 0, -1);
+        if (list.size() == 0) {
             logger.info("从数据库重新获取！！！");
             List<UserTest> listUser = userTestMapper.selectUserTest();
             listUser.forEach(user -> {
                 System.out.println(user);
             });
-        }else{
+        } else {
             logger.info("redis缓存获取获取！！！");
-            list.forEach(System.out::println);
+            List<UserTest> li = (List<UserTest>) list.get(0);
+            li.forEach(System.out::println);
         }
     }
 
     @Override
     public void saveUserAll() {
         List<UserTest> listUser = userTestMapper.selectUserTest();
-        listUser.forEach((user -> {
+       // redisTemplateUtil.setList("userList", listUser);
+        redisTemplateUtil.setRightList("userList", listUser);
+     /*   listUser.forEach((user -> {
             redisTemplate.opsForList().rightPush("userList",user);
-        }));
+        }));*/
         logger.info("储存redis缓存！！");
     }
 
