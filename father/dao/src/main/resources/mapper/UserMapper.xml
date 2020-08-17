@@ -5,7 +5,7 @@
 <mapper namespace="com.miu.dao.mapper.UserMapper">
 
     <select id="selectAll" resultType="com.miu.entity.User">
-        select Sname from user WHERE  SID = '010';
+        select Sname name from user;
     </select>
 
     <select id="selectById" resultType="com.miu.entity.User">
