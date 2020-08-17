@@ -1,26 +1,12 @@
 package com.miu.web.controller;
-
-
-import org.apache.maven.model.Model;
-import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import java.io.*;
-import java.net.URL;
-import java.util.Enumeration;
 import java.util.Properties;
-import java.util.jar.JarEntry;
-import java.util.jar.JarFile;
 
 @Controller
 public class GetVersion {
-
-    @Value("${url}")
-    private String URL;
 
     @Value("${versionUrl}")
     private String versionUrl;
