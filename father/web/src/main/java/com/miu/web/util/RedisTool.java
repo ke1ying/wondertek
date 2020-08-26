@@ -78,7 +78,7 @@ public class RedisTool {
      * 加锁
      */
     public boolean lock(JedisPool jedisPool, String key, String requestId) {
-        Jedis jedis = null;
+     /*   Jedis jedis = null;
         try {
 
             jedis = jedisPool.getResource();
@@ -93,8 +93,20 @@ public class RedisTool {
             if (null != jedis) {
                 jedis.close();
             }
+        }*/
+        try {
+            RedisCallback<String> callback = (connection) -> {
+                JedisCommands commands = (JedisCommands) connection.getNativeConnection();
+                //使用uuid和 当前线程的名字作为 存储值
+                //NX 当key不存在时，我们进行set操作；若key已经存在，则不做任何操作
+                //PX 给这个key加一个过期的设置，具体时间由第五个参数决定
+                return commands.set(key, requestId, "NX", "PX", expire);
+            };
+            String result = (String) redisTemplate.execute(callback);
+            return !StringUtils.isEmpty(result);
+        } catch (Exception e) {
+            log.error("set redis occured an exception:",e);
         }
-
         return false;
 
     }
