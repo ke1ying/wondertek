@@ -1,5 +1,6 @@
 package com.miu.web.controller;
 import com.miu.web.Schedule.TestSchedule;
+import com.miu.web.meiju.GradeEnum;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,7 +36,8 @@ public class GetVersion {
     @RequestMapping("/testOne")
     @ResponseBody
     public void test() throws InterruptedException {
-        new TestSchedule().test();
+        System.out.println(GradeEnum.HIGH.getSchool());
+        //new TestSchedule().test();
     }
 }
 
