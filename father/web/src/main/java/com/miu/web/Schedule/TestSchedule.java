@@ -29,7 +29,7 @@ public class TestSchedule extends Thread{
         config.setMaxWaitMillis(1000 * 100);
         // 在borrow一个jedis实例时，是否需要验证，若为true，则所有jedis实例均是可用的
         config.setTestOnBorrow(true);
-        pool = new JedisPool(config, "127.0.0.1", 6379, 300000);
+        pool = new JedisPool(config, "127.0.0.1", 6379, 5000);
     }
 
     private static final Logger log = LoggerFactory.getLogger(TestSchedule.class);
@@ -43,7 +43,7 @@ public class TestSchedule extends Thread{
     @Autowired
     private RedisTool redisTool;
 
-    @Scheduled(cron = "50 51 17 * * ?")
+    @Scheduled(cron = "10 10 9 * * ?")
     public void test() throws InterruptedException {
         String keyLock = "keYing";
         String requestId = UUID.randomUUID().toString();

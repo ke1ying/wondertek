@@ -80,7 +80,7 @@ public class ServletTestImlp implements ServiceTest {
 
     @Override
     public void getUserAll() {
-        List<UserTest> list = redisTemplate.opsForList().range("userList", 0, -1);
+        List<UserTest> list = redisTemplate.opsForList().range("newUser", 0, -1);
         if (list.size() == 0) {
             logger.info("从数据库重新获取！！！");
             List<UserTest> listUser = userTestMapper.selectUserTest();
@@ -98,7 +98,7 @@ public class ServletTestImlp implements ServiceTest {
     public void saveUserAll() {
         List<UserTest> listUser = userTestMapper.selectUserTest();
        // redisTemplateUtil.setList("userList", listUser);
-        redisTemplateUtil.setRightList("userList", listUser);
+        redisTemplateUtil.setRightList("newUser", listUser);
      /*   listUser.forEach((user -> {
             redisTemplate.opsForList().rightPush("userList",user);
         }));*/
