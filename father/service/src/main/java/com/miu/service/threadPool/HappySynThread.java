@@ -16,7 +16,9 @@ public class HappySynThread extends Thread{
     }
 
     public void run(){
-        logger.info("进入多线程！！");
+        logger.info("进入多线程！！当前线程："+Thread.currentThread().getName());
+
+
         count.countDown();
     }
 
