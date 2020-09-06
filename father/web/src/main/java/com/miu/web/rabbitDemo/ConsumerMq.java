@@ -8,11 +8,11 @@ import java.util.concurrent.TimeoutException;
 
 public class ConsumerMq {
 
-    public static void main(String[] args) throws IOException, TimeoutException {
+    public static void main(String[] args) throws IOException {
         Connection connection = RabbitMqTest.getConnection();
         //获取链接通道
         Channel channel = connection.createChannel();
-        channel.queueDeclare("hello",false,false,false,null);
+        channel.queueDeclare("hello",true,false,true,null);
 
         channel.basicConsume("hello",true,new DefaultConsumer(channel){
             @Override
