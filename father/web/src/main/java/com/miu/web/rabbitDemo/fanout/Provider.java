@@ -11,7 +11,7 @@ public class Provider {
         Connection connection = RabbitMqTest.getConnection();
         Channel channel = connection.createChannel();
         channel.exchangeDeclare("logs","fanout");
-
+        //第三个参数：消息是否持久化
         channel.basicPublish("logs","",null,"fanout message".getBytes());
         RabbitMqTest.closeConnection(channel,connection);
     }
