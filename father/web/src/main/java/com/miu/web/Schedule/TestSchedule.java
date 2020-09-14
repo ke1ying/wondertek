@@ -18,6 +18,7 @@ import java.util.UUID;
 @Component
 public class TestSchedule extends Thread{
 
+
     private static JedisPool pool = null;
     static {
         JedisPoolConfig config = new JedisPoolConfig();
@@ -27,7 +28,7 @@ public class TestSchedule extends Thread{
         config.setMaxIdle(100);
         // 设置最大等待时间
         config.setMaxWaitMillis(1000 * 100);
-        // 在borrow一个jedis实例时，是否需要验证，若为true，则所有jedis实例均是可用的
+        // 在borrow一个jedis实例时，是否需要验证，若为true，则所有jedis实例均是可用
         config.setTestOnBorrow(true);
         pool = new JedisPool(config, "127.0.0.1", 6379, 5000);
     }

@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="优化">
-      <change afterPath="$PROJECT_DIR$/.idea/father.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="从pom文件获取版本号完成">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ServletTestImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ServletTestImlp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/WebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/Schedule/TestSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/Schedule/TestSchedule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +13,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Kotlin Enum" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -59,17 +52,93 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/service/src/main/java/com/miu/service/util" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.miu.service" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.miu.web.rabbitDemo.fanout" />
       <recent name="com.miu.service" />
       <recent name="com.miu.service.impl" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\father\service\src\main\java\com\miu\service\util" />
+      <recent name="D:\workspace\father\web\src\main\java\com\miu\web\util" />
+      <recent name="D:\workspace\father\dao\src\main\resources\mapper" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.WebApplication">
+    <configuration name="Consumer1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.rabbitDemo.topic.Consumer1" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.rabbitDemo.topic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Consumer2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.rabbitDemo.topic.Consumer2" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.rabbitDemo.topic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Provider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.rabbitDemo.topic.Provider" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.rabbitDemo.topic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.WebApplication" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="provider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.rabbitDemo.direct.provider" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.rabbitDemo.direct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.miu.web.WebApplication" />
@@ -77,6 +146,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.WebApplication" />
+        <item itemvalue="Application.Provider" />
+        <item itemvalue="Application.Consumer1" />
+        <item itemvalue="Application.Consumer2" />
+        <item itemvalue="Application.provider" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,7 +172,39 @@
       <workItem from="1596157115157" duration="2252000" />
       <workItem from="1596159572185" duration="4379000" />
       <workItem from="1596524019672" duration="2342000" />
-      <workItem from="1596526425344" duration="1039000" />
+      <workItem from="1596526425344" duration="3747000" />
+      <workItem from="1596678797403" duration="8512000" />
+      <workItem from="1596689313631" duration="10083000" />
+      <workItem from="1596762303995" duration="7516000" />
+      <workItem from="1596780021242" duration="615000" />
+      <workItem from="1596783276454" duration="6910000" />
+      <workItem from="1597023791554" duration="2265000" />
+      <workItem from="1597038589184" duration="2135000" />
+      <workItem from="1597108670846" duration="1655000" />
+      <workItem from="1597553320212" duration="182000" />
+      <workItem from="1597628964319" duration="9319000" />
+      <workItem from="1597645806380" duration="6065000" />
+      <workItem from="1597653808178" duration="629000" />
+      <workItem from="1597712470246" duration="3396000" />
+      <workItem from="1597797931425" duration="3356000" />
+      <workItem from="1598316846289" duration="103000" />
+      <workItem from="1598317042031" duration="6073000" />
+      <workItem from="1598352970273" duration="2352000" />
+      <workItem from="1598358062248" duration="600000" />
+      <workItem from="1598368681200" duration="1955000" />
+      <workItem from="1598402707620" duration="13245000" />
+      <workItem from="1598489019527" duration="2592000" />
+      <workItem from="1598576947478" duration="13460000" />
+      <workItem from="1598669107188" duration="2121000" />
+      <workItem from="1598753317613" duration="2359000" />
+      <workItem from="1599117835398" duration="612000" />
+      <workItem from="1599119025076" duration="1661000" />
+      <workItem from="1599354743708" duration="17203000" />
+      <workItem from="1599389734656" duration="5851000" />
+      <workItem from="1599478525199" duration="3332000" />
+      <workItem from="1599915342959" duration="5407000" />
+      <workItem from="1599963357989" duration="11159000" />
+      <workItem from="1600085500743" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="抽象类用法">
       <created>1596100442953</created>
@@ -124,7 +234,126 @@
       <option name="project" value="LOCAL" />
       <updated>1596524303431</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="大数据存储">
+      <created>1596527505167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596527505167</updated>
+    </task>
+    <task id="LOCAL-00006" summary="获取pom文件版本号">
+      <created>1596681675142</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596681675142</updated>
+    </task>
+    <task id="LOCAL-00007" summary="获取JAR包存放路径">
+      <created>1596764274574</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1596764274574</updated>
+    </task>
+    <task id="LOCAL-00008" summary="从pom文件获取版本号完成">
+      <created>1596768246217</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1596768246217</updated>
+    </task>
+    <task id="LOCAL-00009" summary="双亲委派测试中1.0">
+      <created>1597629086632</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1597629086632</updated>
+    </task>
+    <task id="LOCAL-00010" summary="一头扎进好玩的redis从缓存从获取数据~">
+      <created>1597634700429</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1597634700429</updated>
+    </task>
+    <task id="LOCAL-00011" summary="RedisTemplateUtil.java">
+      <created>1597652086958</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1597652086958</updated>
+    </task>
+    <task id="LOCAL-00012" summary="算法">
+      <created>1598435148381</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598435148381</updated>
+    </task>
+    <task id="LOCAL-00013" summary="代码优化">
+      <created>1598577310297</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598577310297</updated>
+    </task>
+    <task id="LOCAL-00014" summary="枚举用法">
+      <created>1598578316386</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1598578316386</updated>
+    </task>
+    <task id="LOCAL-00015" summary="多线程">
+      <created>1598599777649</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1598599777649</updated>
+    </task>
+    <task id="LOCAL-00016" summary="精品RabbitMq生产消费，第七课学完">
+      <created>1599387582592</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599387582592</updated>
+    </task>
+    <task id="LOCAL-00017" summary="rabbitMq，点对点生产、消费">
+      <created>1599391167805</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1599391167805</updated>
+    </task>
+    <task id="LOCAL-00018" summary="rabbit实现能者多劳，第10集结束">
+      <created>1599397413698</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599397413698</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fanout广播模式，11课学完">
+      <created>1599488765449</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599488765449</updated>
+    </task>
+    <task id="LOCAL-00020" summary="rabbit:路由key，direct直连，12完">
+      <created>1599922411499</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599922411499</updated>
+    </task>
+    <task id="LOCAL-00021" summary="rabbitMq整合springboot，15完">
+      <created>1599977267305</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599977267305</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,96 +375,164 @@
     <MESSAGE value="抽象类用法" />
     <MESSAGE value="优化" />
     <MESSAGE value="双亲委派测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="双亲委派测试" />
+    <MESSAGE value="大数据存储" />
+    <MESSAGE value="获取pom文件版本号" />
+    <MESSAGE value="获取JAR包存放路径" />
+    <MESSAGE value="从pom文件获取版本号完成" />
+    <MESSAGE value="双亲委派测试中1.0" />
+    <MESSAGE value="一头扎进好玩的redis从缓存从获取数据~" />
+    <MESSAGE value="RedisTemplateUtil.java" />
+    <MESSAGE value="算法" />
+    <MESSAGE value="代码优化" />
+    <MESSAGE value="枚举用法" />
+    <MESSAGE value="多线程" />
+    <MESSAGE value="精品RabbitMq生产消费，第七课学完" />
+    <MESSAGE value="rabbitMq，点对点生产、消费" />
+    <MESSAGE value="rabbit实现能者多劳，第10集结束" />
+    <MESSAGE value="fanout广播模式，11课学完" />
+    <MESSAGE value="rabbit:路由key，direct直连，12完" />
+    <MESSAGE value="rabbitMq整合springboot，15完" />
+    <option name="LAST_COMMIT_MESSAGE" value="rabbitMq整合springboot，15完" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1596524797001">
+    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1599969709913">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596524797001" />
-    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1596524302103">
+    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599969709913" />
+    <state x="332" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598596891433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596524302103" />
-    <state x="129" y="54" key="DiffContextDialog" timestamp="1596524291668">
+    <state x="332" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1598596891433" />
+    <state x="462" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1598596893227">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1596524291668" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1596526890502">
+    <state x="462" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1598596893227" />
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1599977266326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1596526890502">
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1599977266326" />
+    <state width="443" height="466" key="DebuggerActiveHint" timestamp="1598599183915">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1596526890502">
+    <state width="443" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1598599183915" />
+    <state x="129" y="54" key="DiffContextDialog" timestamp="1599922363705">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1596526890502">
+    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1599922363705" />
+    <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596526890502" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1596526389418">
+    <state width="1323" height="198" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.0.center" timestamp="1600005772660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1596526389418">
+    <state width="1323" height="198" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600005772660" />
+    <state width="1323" height="198" key="GridCell.Tab.0.left" timestamp="1600005772660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1596526389418">
+    <state width="1323" height="198" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600005772660" />
+    <state width="1323" height="198" key="GridCell.Tab.0.right" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1596526389418">
+    <state width="1323" height="198" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.1.bottom" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1596526389418" />
-    <state width="1323" height="223" key="GridCell.Tab.2.bottom" timestamp="1596526389434">
+    <state width="1323" height="198" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.1.center" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
-    <state width="1323" height="223" key="GridCell.Tab.2.center" timestamp="1596526389434">
+    <state width="1323" height="198" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.1.left" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
-    <state width="1323" height="223" key="GridCell.Tab.2.left" timestamp="1596526389434">
+    <state width="1323" height="198" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.1.right" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
-    <state width="1323" height="223" key="GridCell.Tab.2.right" timestamp="1596526389434">
+    <state width="1323" height="198" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.2.bottom" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1596526389434" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1596524308414">
+    <state width="1323" height="198" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.2.center" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596524308414" />
-    <state x="390" y="150" key="git4idea.merge.GitPullDialog" timestamp="1596156355268">
+    <state width="1323" height="198" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.2.left" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1596156355268" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1596177959194">
+    <state width="1323" height="198" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state width="1323" height="198" key="GridCell.Tab.2.right" timestamp="1600005772661">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1596177959194" />
+    <state width="1323" height="198" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1600005772661" />
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog" timestamp="1598577925634">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="18" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1598577925634" />
+    <state x="184" y="8" key="SettingsEditor" timestamp="1599919465547">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599919465547" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599977271176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599977271176" />
+    <state x="390" y="150" key="git4idea.merge.GitPullDialog" timestamp="1599963372849">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="150" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1599963372849" />
+    <state x="523" y="134" key="refactoring.ChangeSignatureDialog" timestamp="1598577694750">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="523" y="134" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1598577694750" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1598600338349">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1598600338349" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599972217222">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1599972217222" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/TestStaticBlock.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/test/TestClassLoader.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/TestStaticBlock.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/test/TestClassLoader.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/util/RedisTool.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/util/RedisTool.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day1.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day1.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/father$WebApplication.ic" NAME="WebApplication Coverage Results" MODIFIED="1596693159811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
