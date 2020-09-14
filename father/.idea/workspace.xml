@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="从pom文件获取版本号完成">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/Schedule/TestSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/Schedule/TestSchedule.java" afterDir="false" />
-    </list>
+    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="从pom文件获取版本号完成" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -204,7 +201,7 @@
       <workItem from="1599478525199" duration="3332000" />
       <workItem from="1599915342959" duration="5407000" />
       <workItem from="1599963357989" duration="11159000" />
-      <workItem from="1600085500743" duration="802000" />
+      <workItem from="1600085500743" duration="1263000" />
     </task>
     <task id="LOCAL-00001" summary="抽象类用法">
       <created>1596100442953</created>
