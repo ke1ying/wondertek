@@ -5,60 +5,23 @@ import java.util.*;
 public class day1 {
 
     /*
-     * 输如：人名（用“,”隔开，代表投票数，输出活得票数最多的人，若票数相同比较人名大小）
+     * 古典问题：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到
+     * 第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？
+     *   下标 0  1   2   3   4   5   6  7  8  9   10
+     *   月份 1  2   3   4   5   6   7  8  9  10  11  12  13   14  15  16  17  18  19  20
+     *   几对 1  1   2   3   5   8  13  21 34  55  89
+     *   几只 2  2   4   6
      * */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String str = sc.next();
-        String[] strings = str.split(",");
-        ArrayList<String> arrayList = new ArrayList<>();
-        for (int i = 0; i < strings.length; i++) {
-            arrayList.add(strings[i]);
+        Integer dui = 0;
+        for (int i = 1; i <= 10; i++) {
+            int old = dui;
+            dui = old + dui;
+            int yue = i+2;
+            System.out.println("第" + yue + "个月" + dui);
         }
-        String result = suanfa(arrayList);
-        System.out.println(result);
     }
 
-    private static String suanfa(ArrayList<String> arrayList) {
-        Map<String, Integer> resu = new TreeMap<>();
-        for (int i = 0; i < arrayList.size(); i++) {
-           /* System.out.println("charAt(0):" + arrayList.get(i).charAt(0));
-            if (arrayList.get(i).charAt(0) < 'A' || arrayList.get(i).charAt(0) > 'Z') {
-                return "错误1";
-            }
-            for (int j = 0; j < arrayList.get(i).length(); j++) {
-                System.out.println("charAt(j):" + arrayList.get(i).charAt(j));
-                if (arrayList.get(i).charAt(j) < 'a' || arrayList.get(i).charAt(j) > 'z') {
-                    return "错误2";
-                }
-            }*/
-            if (resu.containsKey(arrayList.get(i))) {
-                int temp = resu.get(arrayList.get(i));
-                temp++;
-                resu.put(arrayList.get(i), temp);
-            } else {
-                resu.put(arrayList.get(i), 1);
-            }
-        }
-
-        List<Map.Entry<String,Integer>> list = new ArrayList<>(resu.entrySet());
-        Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
-            @Override
-            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
-                System.out.println("o1.getValue():" + o1.getValue());
-                System.out.println("o2.getValue():" + o2.getValue());
-                if (o1.getValue().compareTo(o2.getValue()) == 0) {
-                    System.out.println("o1.getKey():" + o1.getKey());
-                    System.out.println("o2.getKey():" + o2.getKey());
-                    return o1.getKey().compareTo(o2.getKey());
-                } else {
-                    return o2.getValue().compareTo(o1.getValue());
-                }
-            }
-        });
-        String result = list.get(0).getKey();
-        return result;
-    }
 
 }
 
