@@ -1,5 +1,7 @@
 package com.miu.web.controller;
+import com.miu.service.MongoService;
 import com.miu.web.meiju.GradeEnum;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +12,9 @@ public class GetVersion {
 
     @Value("${versionUrl}")
     private String versionUrl;
+
+    @Autowired
+    private MongoService mongoService;
 
     @RequestMapping("/getVersion")
     @ResponseBody
@@ -34,7 +39,9 @@ public class GetVersion {
     @RequestMapping("/testOne")
     @ResponseBody
     public void test() throws InterruptedException {
-        System.out.println(GradeEnum.HIGH.getSchool());
+        mongoService.insert();
+        mongoService.findAll();
+//        System.out.println(GradeEnum.HIGH.getSchool());
         //new TestSchedule().test();
     }
 }
