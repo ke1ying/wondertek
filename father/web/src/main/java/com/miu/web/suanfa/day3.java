@@ -3,7 +3,7 @@ package com.miu.web.suanfa;
 
 import java.util.*;
 
-public class Test {
+public class day3 {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(1);

@@ -6,6 +6,11 @@ public class User {
 
    private Integer sex;
 
+    public User(String name, Integer sex) {
+        this.name = name;
+        this.sex = sex;
+    }
+
     public String getName() {
         return name;
     }

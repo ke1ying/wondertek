@@ -39,8 +39,9 @@ public class GetVersion {
     @RequestMapping("/testOne")
     @ResponseBody
     public void test() throws InterruptedException {
-        mongoService.insert();
-        mongoService.findAll();
+        System.out.println("测试");
+//        mongoService.insert();
+//        mongoService.findAll();
 //        System.out.println(GradeEnum.HIGH.getSchool());
         //new TestSchedule().test();
     }

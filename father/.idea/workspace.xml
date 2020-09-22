@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="从pom文件获取版本号完成">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/interceptor/LoginConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/miu/dao/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/miu/dao/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/miu/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/miu/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/miu/entity/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/miu/entity/UserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/miu/service/TestService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/miu/service/TestService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/miu/service/threadPool/HappySynThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/miu/service/threadPool/HappySynThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/miu/service/util/RedisTemplateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/miu/service/util/RedisTemplateUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/GetVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/GetVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/WebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/WebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/rabbit/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/rabbit/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/rabbit/Consumer2.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/rabbit/Consumer2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day1.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/Schedule/TestSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/Schedule/TestSchedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/GetVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/GetVersion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/day1$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/day1.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/day1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,38 +92,12 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.WebApplication">
-    <configuration name="Provider" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.miu.web.rabbitDemo.topic.Provider" />
-      <module name="web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.miu.web.rabbitDemo.topic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.miu.web.suanfa.Test" />
       <module name="web" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.miu.web.suanfa.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.miu.web.WebApplication" />
-      <module name="web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.miu.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -155,6 +131,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="day4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.suanfa.day4" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.suanfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.miu.web.suanfa.test" />
+      <module name="web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.miu.web.suanfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="web" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.miu.web.WebApplication" />
@@ -164,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.day4" />
+        <item itemvalue="Application.test" />
         <item itemvalue="Application.day1" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.day2" />
-        <item itemvalue="Application.WebApplication" />
-        <item itemvalue="Application.Provider" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +230,9 @@
       <workItem from="1600573739901" duration="630000" />
       <workItem from="1600594162849" duration="226000" />
       <workItem from="1600666187269" duration="1156000" />
-      <workItem from="1600667967099" duration="3835000" />
+      <workItem from="1600667967099" duration="3871000" />
+      <workItem from="1600675352794" duration="6519000" />
+      <workItem from="1600743720992" duration="2376000" />
     </task>
     <task id="LOCAL-00001" summary="抽象类用法">
       <created>1596100442953</created>
@@ -391,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600671923229</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="本地数据库">
+      <created>1600672135546</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1600672135546</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -432,13 +443,14 @@
     <MESSAGE value="rabbitMq整合springboot，15完" />
     <MESSAGE value="算法练习" />
     <MESSAGE value="mongoDB的使用：新增，查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="mongoDB的使用：新增，查询" />
+    <MESSAGE value="本地数据库" />
+    <option name="LAST_COMMIT_MESSAGE" value="本地数据库" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1600671098567">
+    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1600747287259">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600671098567" />
+    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600747287259" />
     <state x="332" y="286" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1598596891433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -447,14 +459,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="243" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1598596893227" />
-    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1600671922136">
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1600672134344">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600671922136" />
-    <state width="443" height="466" key="DebuggerActiveHint" timestamp="1600671185772">
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1600672134344" />
+    <state width="443" height="466" key="DebuggerActiveHint" timestamp="1600681807030">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="443" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1600671185772" />
+    <state width="443" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1600681807030" />
     <state x="129" y="54" key="DiffContextDialog" timestamp="1600671950472">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -463,54 +475,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="53" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600153404943" />
-    <state width="1323" height="198" key="GridCell.Tab.0.bottom" timestamp="1600671453035">
+    <state width="1323" height="329" key="GridCell.Tab.0.bottom" timestamp="1600747369513">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600671453035" />
-    <state width="1323" height="198" key="GridCell.Tab.0.center" timestamp="1600671453035">
+    <state width="1323" height="329" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600747369513" />
+    <state width="1323" height="329" key="GridCell.Tab.0.center" timestamp="1600747369512">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600671453035" />
-    <state width="1323" height="198" key="GridCell.Tab.0.left" timestamp="1600671453034">
+    <state width="1323" height="329" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600747369512" />
+    <state width="1323" height="329" key="GridCell.Tab.0.left" timestamp="1600747369512">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600671453034" />
-    <state width="1323" height="198" key="GridCell.Tab.0.right" timestamp="1600671453035">
+    <state width="1323" height="329" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600747369512" />
+    <state width="1323" height="329" key="GridCell.Tab.0.right" timestamp="1600747369512">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600671453035" />
-    <state width="1323" height="198" key="GridCell.Tab.1.bottom" timestamp="1600671452857">
+    <state width="1323" height="329" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600747369512" />
+    <state width="1323" height="329" key="GridCell.Tab.1.bottom" timestamp="1600747381020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600671452857" />
-    <state width="1323" height="198" key="GridCell.Tab.1.center" timestamp="1600671452857">
+    <state width="1323" height="329" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600747381020" />
+    <state width="1323" height="329" key="GridCell.Tab.1.center" timestamp="1600747381020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600671452857" />
-    <state width="1323" height="198" key="GridCell.Tab.1.left" timestamp="1600671452857">
+    <state width="1323" height="329" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600747381020" />
+    <state width="1323" height="329" key="GridCell.Tab.1.left" timestamp="1600747381019">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600671452857" />
-    <state width="1323" height="198" key="GridCell.Tab.1.right" timestamp="1600671452857">
+    <state width="1323" height="329" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600747381019" />
+    <state width="1323" height="329" key="GridCell.Tab.1.right" timestamp="1600747381020">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600671452857" />
-    <state width="1323" height="198" key="GridCell.Tab.2.bottom" timestamp="1600671452858">
+    <state width="1323" height="329" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600747381020" />
+    <state width="1323" height="329" key="GridCell.Tab.2.bottom" timestamp="1600747369297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600671452858" />
-    <state width="1323" height="198" key="GridCell.Tab.2.center" timestamp="1600671452858">
+    <state width="1323" height="329" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600747369297" />
+    <state width="1323" height="329" key="GridCell.Tab.2.center" timestamp="1600747369296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1600671452858" />
-    <state width="1323" height="198" key="GridCell.Tab.2.left" timestamp="1600671452858">
+    <state width="1323" height="329" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1600747369296" />
+    <state width="1323" height="329" key="GridCell.Tab.2.left" timestamp="1600747369296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1600671452858" />
-    <state width="1323" height="198" key="GridCell.Tab.2.right" timestamp="1600671452858">
+    <state width="1323" height="329" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1600747369296" />
+    <state width="1323" height="329" key="GridCell.Tab.2.right" timestamp="1600747369296">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="198" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1600671452858" />
+    <state width="1323" height="329" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1600747369296" />
     <state x="213" y="18" key="Maven.ArtifactSearchDialog" timestamp="1600153149070">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -519,10 +531,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600153409577" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600671952661">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600672139814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600671952661" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600672139814" />
     <state x="390" y="150" key="git4idea.merge.GitPullDialog" timestamp="1600152919732">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -567,6 +579,16 @@
           <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/suanfa/day2.java</url>
           <line>41</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/interceptor/LoginInterceptor.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/LoginController.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

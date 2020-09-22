@@ -7,7 +7,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
 
-@Component
+//@Component
 public class Consumer2 {
 
     @RabbitListener(queuesToDeclare = @Queue(value = "work"))

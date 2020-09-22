@@ -74,7 +74,7 @@ public class WebTest {
         //testService.exportExcel();
 
         //存储大数据1000万条数据
-        serviceTest.saveNums();
+//        serviceTest.saveNums();
     }
 
     public static void main(String[] args) {
