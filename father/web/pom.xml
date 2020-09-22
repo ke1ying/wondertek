@@ -21,6 +21,12 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!--freemarker-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-freemarker</artifactId>
+        </dependency>
+        <!--结束-->
         <!--mongoDB-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

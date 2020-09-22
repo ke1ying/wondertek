@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登入</title>
+</head>
+<body>
+    <span>账号：</span><input type="text" name="name" id="name">
+    <span>密码：</span><input type="text" name="password" id="password">
+    <button type="button" id="btn">登入</button>
+    <input type="hidden" id="gotoUrl" name="gotoUrl" value="${gotoUrl}">
+</body>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+
+    })
+    $("#btn").click(function () {
+        var name = $("#name").val();
+        var password = $("#password").val();
+        var gotoUrl = $("#gotoUrl").val();
+        $.ajax({
+            url:'/indexOneOne',
+            type:'POST',
+            data:{
+                name:name,
+                password:password,
+                gotoUrl:gotoUrl
+            },
+            success:function (data) {
+                if(data.flag){
+                    var gotoUrl = data.gotoUrl;
+                    window.location.href="/"+gotoUrl;
+                }else{
+                    window.location.href="/login";
+                }
+            }
+        })
+    })
+</script>
+</html>
