@@ -11,7 +11,7 @@ public class day4 {
     * */
 
     public static void main(String[] args) {
-/*        317*/
+/*        371*/
         List<Integer> list = new ArrayList<>();
         for (int i = 100; i < 1000; i++) {
             int a,b,c;
