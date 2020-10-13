@@ -23,6 +23,8 @@ public class ProviderController {
     public void providerWorl() {
         for (int i = 0; i < 10; i++) {
             rabbitTemplate.convertAndSend("work", "hello world" + i);
+            //一次消费一条队列
+//            rabbitTemplate.convertSendAndReceive("work", "hello world" + i);
         }
     }
 

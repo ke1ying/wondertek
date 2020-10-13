@@ -4,15 +4,26 @@ import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.annotation.Queue;
 import org.springframework.amqp.rabbit.annotation.QueueBinding;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RestController;
 
 //@Component
 public class Consumer2 {
 
+    @Autowired
+    private RabbitTemplate rabbitTemplate;
+
     @RabbitListener(queuesToDeclare = @Queue(value = "work"))
     public void receivel1(String message) {
         System.out.println("1、消费：" + message);
+      /*  try {
+            Thread.sleep(5000);
+        }catch (Exception e){
+
+        }*/
+
     }
 
     @RabbitListener(queuesToDeclare = @Queue(value = "work"))
@@ -23,10 +34,12 @@ public class Consumer2 {
     /*
      * fanout消费
      * */
-    @RabbitListener(bindings = {@QueueBinding(
-            value = @Queue,//创建临时队列)
-            exchange = @Exchange(value = "logsFanout", type = "fanout")
-    )})
+    @RabbitListener(bindings = {
+            @QueueBinding(
+                value = @Queue,//创建临时队列)
+                exchange = @Exchange(value = "logsFanout", type = "fanout")
+            )
+    })
     public void receivelFanout1(String message) {
         System.out.println("1、fanout消费：" + message);
     }
