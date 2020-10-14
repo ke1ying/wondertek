@@ -1,10 +1,14 @@
 package com.miu.entity;
 
-public class User {
+public class User implements Cloneable{
 
    private String name;
 
    private Integer sex;
+
+
+    public User() {
+    }
 
     public User(String name, Integer sex) {
         this.name = name;
@@ -25,5 +29,15 @@ public class User {
 
     public void setSex(Integer sex) {
         this.sex = sex;
+    }
+
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

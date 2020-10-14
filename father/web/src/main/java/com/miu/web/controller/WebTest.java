@@ -69,7 +69,7 @@ public class WebTest {
 
     @RequestMapping("/wondertek")
     @ResponseBody
-    public void wondertek() {
+    public void wondertek() throws Exception{
         //new TestStaticBlock().test();
         //testService.exportExcel();
 
@@ -77,19 +77,6 @@ public class WebTest {
 //        serviceTest.saveNums();
     }
 
-    public static void main(String[] args) {
-        int z = 2;
-        z |= z>>>1;
-        System.out.println(z);
-        z |= z>>>2;
-        System.out.println(z);
-        z |= z>>>4;
-        System.out.println(z);
-        z |= z>>>8;
-        System.out.println(z);
-        z |= z>>>16;
-        System.out.println(z);
-    }
 }
 
 
