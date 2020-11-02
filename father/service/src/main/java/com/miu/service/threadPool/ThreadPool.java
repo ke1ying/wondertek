@@ -15,9 +15,13 @@ import java.util.concurrent.ThreadPoolExecutor;
 @EnableAsync
 public class ThreadPool {
     protected final Logger log = LoggerFactory.getLogger(this.getClass());
+    //线程核心数
     private int corePoolSize = 100;
+    //最大线程数
     private int maxPoolSize = 150;
+    //队列大小
     private int queueCapacity = 500;
+    //最大空闲时间
     private int keepAliveSeconds = 300;
 
     @Bean
