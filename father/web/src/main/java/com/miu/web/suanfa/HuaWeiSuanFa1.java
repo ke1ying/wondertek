@@ -13,7 +13,7 @@ public class HuaWeiSuanFa1 {
     public static void main(String[] args) throws IOException {
         InputStream in = System.in;
         char c = (char)in.read();
-        Integer num = 0;
+        int num = 0;
         while(c != '\n'){
             if(c == ' '){
                 num = 0;

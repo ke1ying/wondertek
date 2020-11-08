@@ -26,6 +26,7 @@ public class HappySynchronized {
             executor.execute(hst);
         }
         count.await();
+        System.out.println("最后执行的?："+Thread.currentThread().getName());
     }
 
 }

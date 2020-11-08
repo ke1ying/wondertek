@@ -1,25 +1,15 @@
 package com.miu.web.controller;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
 import com.miu.entity.User;
 import com.miu.service.ServiceTest;
 import com.miu.service.TestService;
-import com.miu.web.Schedule.TestSchedule;
-import com.miu.web.rabbitDemo.ProviderMq;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.client.RestTemplate;
-
-import javax.annotation.Resource;
-import java.util.Map;
 
 @Controller
 public class WebTest {
@@ -53,14 +43,14 @@ public class WebTest {
         //3、true:独占队列，false:不独占
         //4、ture:队列消费完成自动删除。false:不删除。
         //5、额外附加参数
-        channel.queueDeclare("hello",false,false,false,null);
+        channel.queueDeclare("hello", false, false, false, null);
 
         //发布消息
         //1、交换机名称
         //2、队列名称
         //3、传递消息额外设置
         //4、传递消息内容
-        channel.basicPublish("","hello",null,"hello rabbit".getBytes());
+        channel.basicPublish("", "hello", null, "hello rabbit".getBytes());
         channel.close();
         connection.close();
 
@@ -69,13 +59,27 @@ public class WebTest {
 
     @RequestMapping("/wondertek")
     @ResponseBody
-    public void wondertek() throws Exception{
+    public void wondertek() throws Exception {
         //new TestStaticBlock().test();
         //testService.exportExcel();
-
         //存储大数据1000万条数据
 //        serviceTest.saveNums();
     }
+
+
+    public static void main(String[] args){
+        new WebTest().go();
+    }
+    public void go(){
+        Runnable r=new Runnable(){
+            public void run(){
+                System.out.print("foo");
+            }
+        };
+        Thread t=new Thread(r);
+        t.start();
+    }
+
 
 }
 

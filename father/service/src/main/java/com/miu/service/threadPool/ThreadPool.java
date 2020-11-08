@@ -8,12 +8,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
-import java.util.concurrent.Executor;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
 
 @Configuration
 @EnableAsync
-public class ThreadPool {
+public class ThreadPool{
     protected final Logger log = LoggerFactory.getLogger(this.getClass());
     //线程核心数
     private int corePoolSize = 100;
@@ -23,6 +22,7 @@ public class ThreadPool {
     private int queueCapacity = 500;
     //最大空闲时间
     private int keepAliveSeconds = 300;
+
 
     @Bean
     @Qualifier("initThreadPool")

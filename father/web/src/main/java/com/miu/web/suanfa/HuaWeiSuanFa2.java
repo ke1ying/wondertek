@@ -2,6 +2,7 @@ package com.miu.web.suanfa;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /*
@@ -10,21 +11,19 @@ import java.io.InputStreamReader;
 输出输入字符串中含有该字符的个数。
 * */
 public class HuaWeiSuanFa2 {
-
     public static void main(String[] args) throws IOException {
-        InputStreamReader reader = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(reader);
-        String strs = br.readLine();
-        char c = br.readLine().charAt(0);
-        char[] chars = strs.toCharArray();
-        int total = 0;
-        for (char ch : chars) {
-            if(ch == c || ch +32 == c || ch - 32 == c){
-                total++;
+        InputStream in = System.in;
+        InputStreamReader isr = new InputStreamReader(in);
+        BufferedReader bf = new BufferedReader(isr);
+        String all = bf.readLine();
+        char c = bf.readLine().charAt(0);
+        char[] chars = all.toCharArray();
+        int count = 0;
+        for (char cc : chars) {
+            if (cc == c || cc + 32 == c || cc - 32 == c) {
+                count ++;
             }
         }
-        System.out.println(total);
+        System.out.println(count);
     }
-
-
 }

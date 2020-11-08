@@ -1,25 +1,19 @@
 package com.miu.web.controller;
 
-import com.miu.entity.User;
-import com.miu.web.configuration.DogConfiguration;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import java.util.ArrayList;
 
-public class Test {
-    /*
-   * 测试创建对象
-   *
-   *         Class<User> userClass = User.class;
-  User uz = userClass.newInstance();
+public class Test{
+    int i = 12;
+    static int z = 13;
 
-  User u = new User("张三",1);
-
-  User uClone = (User) u.clone();
-   * */
-
-    public static void main(String[] args) throws Exception {
-
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(DogConfiguration.class);
-        applicationContext.getBean("dog");
-        applicationContext.close();
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("123");
+        list.forEach(a->{
+            System.out.println(a);
+        });
     }
+
+
+
 }
