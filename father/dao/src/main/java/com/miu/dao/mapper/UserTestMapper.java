@@ -11,7 +11,7 @@ public interface UserTestMapper {
 
     List<UserTest> selectUserTest();
 
-    void propagationRequired1();
+    void inertTransactional(UserTest userTest);
 
-    void propagationRequired2();
+    void inert2(UserTest userTest);
 }

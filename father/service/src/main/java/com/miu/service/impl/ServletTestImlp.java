@@ -111,14 +111,56 @@ public class ServletTestImlp implements ServiceTest {
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public void propagationRequired1() {
-        userTestMapper.propagationRequired1();
+        UserTest userTest = new UserTest();
+        userTest.setsName("鸣人二号");
+        userTest.setsAge("男");
+        userTestMapper.inertTransactional(userTest);
     }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
     public void propagationRequired2() {
-        userTestMapper.propagationRequired2();
+        UserTest userTest = new UserTest();
+        userTest.setsName("佐助");
+        userTest.setsAge("男");
+        userTestMapper.inertTransactional(userTest);
         throw new RuntimeException();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void requiredTry() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("naruto");
+        userTest.setsAge("男");
+        userTestMapper.inertTransactional(userTest);
+
+        try {
+            userTest.setsName("sasigei");
+            userTest.setsAge("男");
+            userTestMapper.inertTransactional(userTest);
+            throw new RuntimeException();
+        }catch (Exception e) {
+            System.out.println("回滚中！！！");
+        }
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void propagationRequiredNew1() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("required_new");
+        userTest.setsAge("男");
+        userTestMapper.inertTransactional(userTest);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void propagationRequired() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("requiredName");
+        userTest.setsAge("女");
+        userTestMapper.inertTransactional(userTest);
     }
 
 }

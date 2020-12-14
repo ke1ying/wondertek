@@ -19,4 +19,10 @@ public interface ServiceTest {
     void propagationRequired1();
 
     void propagationRequired2();
+
+    void requiredTry();
+
+    void propagationRequiredNew1();
+
+    void propagationRequired();
 }
