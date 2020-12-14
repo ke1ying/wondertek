@@ -37,4 +37,14 @@ public class UserTestlmpl2 implements UserTest2 {
         userTestMapper.inert2(userTest);
         throw new RuntimeException();
     }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void propagationNested2Throw() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("nestedThrow");
+        userTest.setsAge("3");
+        userTestMapper.inert2(userTest);
+        throw new RuntimeException();
+    }
 }

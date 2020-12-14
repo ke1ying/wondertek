@@ -135,18 +135,6 @@ public class ServletTestImlp implements ServiceTest {
         userTest.setsAge("男");
         userTest.setsSex(new Date());
         userTestMapper.inertTransactional(userTest);
-
-        try {
-            UserTest userTest1 = new UserTest();
-            userTest1.setsName("sasigei");
-            userTest1.setsAge("男");
-            userTest1.setsSex(new Date());
-            int i = 10/0;
-            userTestMapper.inertTransactional(userTest1);
-            throw new RuntimeException();
-        }catch (Exception e) {
-            System.out.println("回滚中！！！");
-        }
     }
 
     @Override
@@ -165,6 +153,36 @@ public class ServletTestImlp implements ServiceTest {
         userTest.setsName("requiredName");
         userTest.setsAge("女");
         userTestMapper.inertTransactional(userTest);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void propagationNested() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("nested");
+        userTest.setsAge("女");
+        userTestMapper.inertTransactional(userTest);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.NESTED)
+    public void propagationNested2() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("nested2");
+        userTest.setsAge("2");
+        userTestMapper.inertTransactional(userTest);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void requiredTry2() {
+        UserTest userTest1 = new UserTest();
+        userTest1.setsName("sasigei");
+        userTest1.setsAge("男");
+        userTest1.setsSex(new Date());
+        int i = 10/0;
+        userTestMapper.inertTransactional(userTest1);
+        throw new RuntimeException();
     }
 
 }
