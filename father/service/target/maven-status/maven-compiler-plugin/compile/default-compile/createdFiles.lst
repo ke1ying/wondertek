@@ -1,7 +1,0 @@
-com\miu\service\TestService.class
-com\miu\service\impl\TestServicelmpl.class
-com\miu\service\threadPool\ThreadPool.class
-com\miu\service\util\RedisTemplateUtil.class
-com\miu\service\threadPool\HappySynThread.class
-com\miu\service\impl\ServletTestImlp.class
-com\miu\service\ServiceTest.class

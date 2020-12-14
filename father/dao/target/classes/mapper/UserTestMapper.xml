@@ -7,4 +7,13 @@
     <select id="selectUserTest" resultType="com.miu.entity.UserTest">
         select Sname,Sage from user;
     </select>
+
+    <insert id="inertTransactional" parameterType="com.miu.entity.UserTest">
+        insert into user (Sname,Ssex) values (#{sName},#{sAge});
+    </insert>
+
+    <insert id="inert2" parameterType="com.miu.entity.UserTest">
+        insert into user (Sname,Ssex) values (#{sName},#{sAge});
+    </insert>
+
 </mapper>
