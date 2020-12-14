@@ -15,4 +15,8 @@ public interface ServiceTest {
     void getUserAll();
 
     void saveUserAll();
+
+    void propagationRequired1();
+
+    void propagationRequired2();
 }

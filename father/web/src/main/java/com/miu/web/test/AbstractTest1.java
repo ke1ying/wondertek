@@ -7,7 +7,7 @@ public abstract class AbstractTest1 {
 
     private static String chouxiang;
 
-    public void sum() {
+     void sum() {
         System.out.println("父抽象类的sum!");
     }
 

@@ -6,6 +6,11 @@ public interface Jiekou {
 
      void sum1();
 
-    String getString1();
+    default String getString1() {
+        return null;
+    }
 
+    static void ss(){
+
+    }
 }

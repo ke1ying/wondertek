@@ -6,12 +6,15 @@ import com.miu.entity.User;
 import com.miu.entity.UserTest;
 import com.miu.service.ServiceTest;
 import com.miu.service.util.RedisTemplateUtil;
+import com.sun.deploy.security.ruleset.RunRule;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -103,6 +106,19 @@ public class ServletTestImlp implements ServiceTest {
             redisTemplate.opsForList().rightPush("userList",user);
         }));*/
         logger.info("储存redis缓存！！");
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void propagationRequired1() {
+        userTestMapper.propagationRequired1();
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void propagationRequired2() {
+        userTestMapper.propagationRequired2();
+        throw new RuntimeException();
     }
 
 }

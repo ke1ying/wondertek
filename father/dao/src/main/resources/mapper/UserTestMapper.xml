@@ -7,4 +7,12 @@
     <select id="selectUserTest" resultType="com.miu.entity.UserTest">
         select Sname,Sage from user;
     </select>
+
+    <insert id="propagationRequired1">
+        insert into user (Sname,Ssex) values ("鸣人","男");
+    </insert>
+
+    <insert id="propagationRequired2">
+        insert into user (Sname,Sage) values ("佐助","男");
+    </insert>
 </mapper>
