@@ -185,4 +185,24 @@ public class ServletTestImlp implements ServiceTest {
         throw new RuntimeException();
     }
 
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void requiredTry33() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("44");
+        userTest.setsAge("4");
+        userTest.setsSex(new Date());
+        userTestMapper.inertTransactional(userTest);
+
+
+            UserTest userTest2 = new UserTest();
+            userTest2.setsName("33");
+            userTest2.setsAge("3");
+            userTest2.setsSex(new Date());
+            userTestMapper.inertTransactional(userTest);
+            throw new RuntimeException();
+
+
+    }
+
 }

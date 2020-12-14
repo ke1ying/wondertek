@@ -30,8 +30,7 @@ public class TransactionalCon {
     }
 
     /*
-    * try catch捕获到异常，
-    * 则 其他 方法一可以运行，此异常的回滚。
+    *
     * */
     @RequestMapping("/requiredTry")
     @ResponseBody
@@ -44,6 +43,12 @@ public class TransactionalCon {
 
             }
 
+    }
+
+    @RequestMapping("/requiredTry33")
+    @ResponseBody
+    public void requiredTry33(){
+        serviceTest.requiredTry33();
     }
 
     /*《============================required_new ====================》

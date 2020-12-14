@@ -31,4 +31,6 @@ public interface ServiceTest {
     void propagationNested2();
 
     void requiredTry2();
+
+    void requiredTry33();
 }
