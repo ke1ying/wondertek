@@ -27,4 +27,14 @@ public class UserTestlmpl2 implements UserTest2 {
         userTest.setsAge("男");
         userTestMapper.inert2(userTest);
     }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
+    public void propagationRequiredThrw() {
+        UserTest userTest = new UserTest();
+        userTest.setsName("requeredThrow");
+        userTest.setsAge("男");
+        userTestMapper.inert2(userTest);
+        throw new RuntimeException();
+    }
 }

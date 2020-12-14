@@ -1,60 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="rabbitMq实现流量削峰(模拟抢红包场景)">
-      <change afterPath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserTestMapper2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserTestMapper2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ExcelService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/UserTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ExcelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/UserTestlmpl2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="a3ccfc37-0e1e-49cd-ab84-b89c9656b2a1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserTestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/java/com/miu/dao/mapper/UserTestMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserTestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapper/UserTestMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/com/miu/dao/mapper/UserTestMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/com/miu/dao/mapper/UserTestMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/classes/mapper/UserTestMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/target/classes/mapper/UserTestMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/dao-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dao/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/classes/com/miu/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/entity/target/classes/com/miu/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/entity-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/ServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/entity/src/main/java/com/miu/entity/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/UserTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/UserTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ServletTestImlp.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ServletTestImlp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/miu/service/ServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/miu/service/ServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/UserTestlmpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/UserTestlmpl2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service/target/classes/com/miu/service/impl/ServletTestImlp.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/miu/service/impl/ServletTestImlp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/classes/com/miu/service/threadPool/ThreadPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/service/target/classes/com/miu/service/threadPool/ThreadPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/target/service-0.0.1-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/TransactionalCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/miu/web/controller/TransactionalCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/WebApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/WebApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/HappySynchronized.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/HappySynchronized.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/WebTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/controller/WebTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/rabbit/Consumer2.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/rabbit/Consumer2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/rabbit/ProviderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/rabbit/ProviderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/day1.class" beforeDir="false" afterPath="$PROJECT_DIR$/web/target/classes/com/miu/web/suanfa/day1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/classes/com/miu/web/test/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/target/web-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +255,8 @@
       <workItem from="1607850520326" duration="612000" />
       <workItem from="1607854185371" duration="160000" />
       <workItem from="1607926199658" duration="6798000" />
-      <workItem from="1607938441814" duration="364000" />
+      <workItem from="1607938441814" duration="1089000" />
+      <workItem from="1607946302623" duration="2737000" />
     </task>
     <task id="LOCAL-00001" summary="抽象类用法">
       <created>1596100442953</created>
@@ -497,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607929816785</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="propogation_requiredNEW&#10;外围无事务的时候，内围事务是相互之间不影响的。&#10;外围有事务的时候，则看情况，新建事务不会和外围事务回滚，同一个事务会和外围事务回滚">
+      <created>1607938996907</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1607938996907</updated>
+    </task>
+    <task id="LOCAL-00030" summary="代码提交">
+      <created>1607939027666</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607939027666</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,8 +487,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="优化" />
-    <MESSAGE value="双亲委派测试" />
     <MESSAGE value="大数据存储" />
     <MESSAGE value="获取pom文件版本号" />
     <MESSAGE value="获取JAR包存放路径" />
@@ -541,21 +510,23 @@
     <MESSAGE value="算法" />
     <MESSAGE value="copy数组方法" />
     <MESSAGE value="excelPOI导入jar包新增，&#10;和 transaction的传播性，propagation_required默认传播要求" />
-    <option name="LAST_COMMIT_MESSAGE" value="excelPOI导入jar包新增，&#10;和 transaction的传播性，propagation_required默认传播要求" />
+    <MESSAGE value="propogation_requiredNEW&#10;外围无事务的时候，内围事务是相互之间不影响的。&#10;外围有事务的时候，则看情况，新建事务不会和外围事务回滚，同一个事务会和外围事务回滚" />
+    <MESSAGE value="代码提交" />
+    <option name="LAST_COMMIT_MESSAGE" value="代码提交" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1607937219397">
+    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1607948015656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607937219397" />
+    <state x="207" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607948015656" />
     <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607938014752">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="388" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1607938014752" />
-    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1607938672839">
+    <state x="281" y="0" key="CommitChangelistDialog2" timestamp="1607939023040">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607938672839" />
+    <state x="281" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1607939023040" />
     <state width="443" height="466" key="DebuggerActiveHint" timestamp="1607931071927">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -568,54 +539,54 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="53" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600153404943" />
-    <state width="1323" height="270" key="GridCell.Tab.0.bottom" timestamp="1607938627460">
+    <state width="1323" height="270" key="GridCell.Tab.0.bottom" timestamp="1607948492622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607938627460" />
-    <state width="1323" height="270" key="GridCell.Tab.0.center" timestamp="1607938627460">
+    <state width="1323" height="270" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607948492622" />
+    <state width="1323" height="270" key="GridCell.Tab.0.center" timestamp="1607948492622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607938627460" />
-    <state width="1323" height="270" key="GridCell.Tab.0.left" timestamp="1607938627460">
+    <state width="1323" height="270" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607948492622" />
+    <state width="1323" height="270" key="GridCell.Tab.0.left" timestamp="1607948492622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607938627460" />
-    <state width="1323" height="270" key="GridCell.Tab.0.right" timestamp="1607938627460">
+    <state width="1323" height="270" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607948492622" />
+    <state width="1323" height="270" key="GridCell.Tab.0.right" timestamp="1607948492622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607938627460" />
-    <state width="1323" height="270" key="GridCell.Tab.1.bottom" timestamp="1607938624606">
+    <state width="1323" height="270" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607948492622" />
+    <state width="1323" height="270" key="GridCell.Tab.1.bottom" timestamp="1607948522350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607938624606" />
-    <state width="1323" height="270" key="GridCell.Tab.1.center" timestamp="1607938624606">
+    <state width="1323" height="270" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607948522350" />
+    <state width="1323" height="270" key="GridCell.Tab.1.center" timestamp="1607948522350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1607938624606" />
-    <state width="1323" height="270" key="GridCell.Tab.1.left" timestamp="1607938624605">
+    <state width="1323" height="270" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1607948522350" />
+    <state width="1323" height="270" key="GridCell.Tab.1.left" timestamp="1607948522350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1607938624605" />
-    <state width="1323" height="270" key="GridCell.Tab.1.right" timestamp="1607938624606">
+    <state width="1323" height="270" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1607948522350" />
+    <state width="1323" height="270" key="GridCell.Tab.1.right" timestamp="1607948522350">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1607938624606" />
-    <state width="1323" height="270" key="GridCell.Tab.2.bottom" timestamp="1607938611671">
+    <state width="1323" height="270" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1607948522350" />
+    <state width="1323" height="270" key="GridCell.Tab.2.bottom" timestamp="1607948492426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607938611671" />
-    <state width="1323" height="270" key="GridCell.Tab.2.center" timestamp="1607938611671">
+    <state width="1323" height="270" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607948492426" />
+    <state width="1323" height="270" key="GridCell.Tab.2.center" timestamp="1607948492426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1607938611671" />
-    <state width="1323" height="270" key="GridCell.Tab.2.left" timestamp="1607938611671">
+    <state width="1323" height="270" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1607948492426" />
+    <state width="1323" height="270" key="GridCell.Tab.2.left" timestamp="1607948492425">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1607938611671" />
-    <state width="1323" height="270" key="GridCell.Tab.2.right" timestamp="1607938611671">
+    <state width="1323" height="270" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1607948492425" />
+    <state width="1323" height="270" key="GridCell.Tab.2.right" timestamp="1607948492426">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="270" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1607938611671" />
+    <state width="1323" height="270" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1607948492426" />
     <state x="213" y="18" key="Maven.ArtifactSearchDialog" timestamp="1607929117372">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -624,10 +595,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600153409577" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607929823832">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1607939035324">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607929823832" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1607939035324" />
     <state x="385" y="98" width="596" height="532" key="find.popup" timestamp="1607842165889">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -691,11 +662,6 @@
           <url>file://$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/ExcelServiceImpl.java</url>
           <line>23</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/service/src/main/java/com/miu/service/impl/UserTestlmpl2.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

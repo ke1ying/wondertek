@@ -133,12 +133,16 @@ public class ServletTestImlp implements ServiceTest {
         UserTest userTest = new UserTest();
         userTest.setsName("naruto");
         userTest.setsAge("男");
+        userTest.setsSex(new Date());
         userTestMapper.inertTransactional(userTest);
 
         try {
-            userTest.setsName("sasigei");
-            userTest.setsAge("男");
-            userTestMapper.inertTransactional(userTest);
+            UserTest userTest1 = new UserTest();
+            userTest1.setsName("sasigei");
+            userTest1.setsAge("男");
+            userTest1.setsSex(new Date());
+            int i = 10/0;
+            userTestMapper.inertTransactional(userTest1);
             throw new RuntimeException();
         }catch (Exception e) {
             System.out.println("回滚中！！！");

@@ -9,11 +9,11 @@
     </select>
 
     <insert id="inertTransactional" parameterType="com.miu.entity.UserTest">
-        insert into user (Sname,Ssex) values (#{sName},#{sAge});
+        insert into user (Sname,Ssex,Sage) values (#{sName},#{sAge},#{sSex});
     </insert>
 
     <insert id="inert2" parameterType="com.miu.entity.UserTest">
-        insert into user (Sname,Ssex) values (#{sName},#{sAge});
+     insert into user (Sname,Ssex,Sage) values (#{sName},#{sAge},#{sSex});
     </insert>
 
 </mapper>

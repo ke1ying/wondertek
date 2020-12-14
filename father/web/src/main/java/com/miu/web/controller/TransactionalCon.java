@@ -30,13 +30,17 @@ public class TransactionalCon {
     }
 
     /*
-    * 即使try catch捕获到异常，
-    * 依然会回滚
+    * try catch捕获到异常，
+    * 则 其他 方法一可以运行，异常的回滚。
     * */
     @RequestMapping("/requiredTry")
     @ResponseBody
+    @Transactional(propagation = Propagation.REQUIRED)
     public void requiredTry(){
-        serviceTest.requiredTry();
+
+            serviceTest.requiredTry();
+
+
     }
 
     /*
@@ -55,4 +59,23 @@ public class TransactionalCon {
         throw new RuntimeException();
     }
 
+
+    /*
+    *propagation requeirednew
+    *
+    *
+    * */
+    @RequestMapping("/requiredNewTry")
+    @ResponseBody
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void requiredNewTry() {
+        serviceTest.propagationRequired();
+        serviceTest.propagationRequiredNew1();
+        try {
+            serviceTest2.propagationRequiredThrw();
+        } catch (Exception e) {
+            System.out.println("回滚");
+        }
+
+    }
 }
