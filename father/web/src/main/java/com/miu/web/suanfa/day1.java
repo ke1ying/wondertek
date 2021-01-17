@@ -21,13 +21,30 @@ public class day1 {
      * 第三个月后每个月又生一对兔子，假如兔子都不死，问每个月的兔子总数为多少？
      * */
     public static void main(String[] args) {
-        Integer f1 = 1,f2 = 1,f3 = 0;
+        int a=1,b=1,c=0;
+        for (int i = 0; i < 10; i++) {
+            b = a;
+            a = c;
+            c = a+b;
+        }
+        System.out.println(c);
+
+
+
+
+
+
+
+
+
+
+      /*  Integer f1 = 1,f2 = 1,f3 = 0;
         for (int i = 0; i < 10; i++) {
             f2 = f1;
             f1 = f3;
             f3 = f1 + f2;
         }
-        System.out.println(f3);
+        System.out.println(f3);*/
     }
 
 }

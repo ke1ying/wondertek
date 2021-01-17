@@ -26,6 +26,12 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
         </dependency>
         <!--结束-->
+        <!-- 配置gson -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.2.4</version>
+        </dependency>
         <!--mongoDB-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

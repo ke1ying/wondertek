@@ -13,4 +13,8 @@ public class Dog {
     public void destroy(){
         System.out.println("Dog销毁方法！！");
     }
+
+    class Dog1{
+
+    }
 }

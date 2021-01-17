@@ -5,6 +5,8 @@ package com.miu.web.test;
 * */
 public abstract class AbstractTest1 {
 
+    String ss;
+
     private static String chouxiang;
 
      void sum() {

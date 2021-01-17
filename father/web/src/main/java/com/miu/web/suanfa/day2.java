@@ -1,5 +1,8 @@
 package com.miu.web.suanfa;
 
+import com.miu.web.comment.Entry;
+import org.apache.logging.log4j.util.Strings;
+
 import java.util.*;
 
 public class day2 {
@@ -8,11 +11,47 @@ public class day2 {
      * 输如：人名（用“,”隔开，代表投票数，输出获得票数最多的人，若票数相同比较人名大小）
      * */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
+        String names = s.nextLine();
+        String arr[] = names.split(",");
+
+/*        ArrayList<String> name = new ArrayList<>(Arrays.asList(arr));*/
+        ArrayList<String> nameList = new ArrayList<>(arr.length);
+        Collections.addAll(nameList,arr);
+        HashMap<String,Integer> map = new HashMap<>();
+        for (int i = 0; i < nameList.size(); i++) {
+            if(!map.containsKey(nameList.get(i))){
+                map.put(nameList.get(i),1);
+            }else {
+                int x = map.get(nameList.get(i));
+                map.put(nameList.get(i),x+1);
+            }
+        }
+        System.out.println(map);
+
+        ArrayList<HashMap.Entry<String,Integer>> suanList = new ArrayList<>(map.entrySet());
+
+        Collections.sort(suanList, new Comparator<HashMap.Entry<String, Integer>>() {
+            @Override
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                if(o1.getValue().compareTo(o2.getValue()) == 0){
+                    return o1.getKey().compareTo(o2.getKey());
+                }else{
+                    return o1.getValue().compareTo(o2.getValue());
+                }
+            }
+        });
+        System.out.println(suanList.get(0).getKey());
+
+
+      /*  Scanner sc = new Scanner(System.in);
         String names = sc.nextLine();
         String arr[] = names.split(",");
-        jisuan(arr);
+        jisuan(arr);*/
     }
+
+
+
 
     private static void jisuan(String[] arr) {
         List list = Arrays.asList(arr);

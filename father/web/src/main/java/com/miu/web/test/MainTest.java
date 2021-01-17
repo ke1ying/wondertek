@@ -2,21 +2,32 @@ package com.miu.web.test;
 
 
 public class MainTest {
-    private int count;
+    static class Value{
+        public int i=15;
+    }
+    public static class Test{
+        public static void main(String argv[]){
+
+        }
+
+        public void first( ){
+            int i=5;
+            Value v=new Value( );
+            v.i=25;
+            second(v,i);
+            System.out.println(v.i);
+        }
+
+        public void second(Value j,int i){
+            i = 0;
+            j.i = 20;
+            Value val = new Value( );
+            j = val;
+            System.out.println(j.i+" "+i);
+        }
+    }
+
     public static void main(String[] args) {
-        int i = 5;
-        int j = 5;
-        System.out.println(~j);
-        System.out.println(i + ~j);
-    }
 
-    float fun0(){
-        int i = 1;
-        return i;
-    }
-
-    float fun1(){
-        byte i = 1;
-        return i;
     }
 }

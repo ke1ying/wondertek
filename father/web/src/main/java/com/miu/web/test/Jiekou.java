@@ -1,6 +1,6 @@
 package com.miu.web.test;
 
-public interface Jiekou {
+public interface Jiekou extends Jiekou2,Jiekou3{
 
     static String CESHI = "123";
 
@@ -11,6 +11,10 @@ public interface Jiekou {
     }
 
     static void ss(){
+
+    }
+
+    default void z() {
 
     }
 }
