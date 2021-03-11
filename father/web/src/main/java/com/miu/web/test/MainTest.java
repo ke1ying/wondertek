@@ -7,7 +7,7 @@ public class MainTest {
     }
     public static class Test{
         public static void main(String argv[]){
-            System.out.println("test");
+            System.out.println("test22");
         }
 
         public void first( ){
