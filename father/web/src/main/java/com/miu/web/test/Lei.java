@@ -17,7 +17,6 @@ public class Lei extends FuLei{
     }
 
     public Lei(){
-       super(1);
        System.out.println("子类构造函数");
     }
 
