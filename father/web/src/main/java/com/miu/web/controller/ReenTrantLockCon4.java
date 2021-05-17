@@ -30,7 +30,7 @@ class TestThread0 implements Runnable {
         if (reentrantLock.tryLock()) {
             try {
                 System.out.println("进入" + Thread.currentThread().getName());
-                Thread.sleep(7000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -56,7 +56,7 @@ class TestThread1 implements Runnable {
         if (reentrantLock.tryLock()) {
             try {
                 System.out.println("进入" + Thread.currentThread().getName());
-                Thread.sleep(7000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
