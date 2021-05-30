@@ -15,7 +15,7 @@ public class Consumer2 {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-    @RabbitListener(queuesToDeclare = @Queue(value = "work"))
+  /*  @RabbitListener(queuesToDeclare = @Queue(value = "work"))*/
     public void receivel1(String message) {
         System.out.println("1、消费：" + message);
       /*  try {
@@ -26,7 +26,7 @@ public class Consumer2 {
 
     }
 
-    @RabbitListener(queuesToDeclare = @Queue(value = "work"))
+  /*  @RabbitListener(queuesToDeclare = @Queue(value = "work"))*/
     public void receivel2(String message) {
         System.out.println("2、消费：" + message);
     }

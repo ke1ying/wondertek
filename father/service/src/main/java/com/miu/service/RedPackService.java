@@ -1,6 +1,5 @@
 package com.miu.service;
 
-import com.miu.entity.UserRedpack;
 
 public interface RedPackService {
     void getRedPack(String userId);

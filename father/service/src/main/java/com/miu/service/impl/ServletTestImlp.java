@@ -6,8 +6,6 @@ import com.miu.entity.User;
 import com.miu.entity.UserTest;
 import com.miu.service.ServiceTest;
 import com.miu.service.util.RedisTemplateUtil;
-import com.sun.deploy.security.ruleset.RunRule;
-import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,10 +15,8 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class ServletTestImlp implements ServiceTest {

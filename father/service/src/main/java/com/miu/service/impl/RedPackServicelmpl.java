@@ -2,7 +2,6 @@ package com.miu.service.impl;
 
 import com.miu.dao.mapper.RedPackMapper;
 import com.miu.service.RedPackService;
-import com.miu.service.UserRedPackService;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

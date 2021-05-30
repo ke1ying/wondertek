@@ -4,15 +4,10 @@ import com.miu.web.util.RedisTool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.RedisCallback;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisCommands;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
 
-import javax.annotation.Resource;
 import java.util.UUID;
 
 @Component
@@ -44,7 +39,7 @@ public class TestSchedule extends Thread{
     @Autowired
     private RedisTool redisTool;
 
-    @Scheduled(cron = "10 10 9 * * ?")
+/*    @Scheduled(cron = "10 10 9 * * ?")*/
     public void test() throws InterruptedException {
         String keyLock = "keYing";
         String requestId = UUID.randomUUID().toString();

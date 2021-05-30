@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /*
  * rabbitMq流量削峰
  * */
-@Component
+/*@Component*/
 public class XueFengConsumer {
 
     @Autowired
