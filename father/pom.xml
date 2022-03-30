@@ -32,6 +32,11 @@
     </modules>
 
     <dependencies>
+        <!--引入kafak和spring整合的jar-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
         <!--AOP 注解-->
         <!-- http://mvnrepository.com/artifact/org.aspectj/aspectjrt -->
         <dependency>
