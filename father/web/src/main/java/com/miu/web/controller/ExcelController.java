@@ -1,6 +1,7 @@
 package com.miu.web.controller;
 
 import com.miu.service.ExcelService;
+import net.sf.cglib.proxy.MethodInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-public class ExcelController {
+public class ExcelController  {
 
     @Autowired
     private ExcelService excelService;
@@ -21,6 +22,7 @@ public class ExcelController {
 
     @RequestMapping("/excelLogin")
     public ModelAndView exelD() {
+        int i = 10/0;
         ModelAndView mv = new ModelAndView();
         mv.setViewName("excel");
         return mv;

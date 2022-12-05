@@ -25,12 +25,46 @@ public class TestKafkaController {
     private KafkaTemplate<String, String> kafkaTemplate;
 
     /**
-     * 同步发送
+     * 异步发送
      *
      * @return
      */
     @RequestMapping("/sendKafka")
     public String syncSendMessage() {
+        for (int i = 0; i < 10; i++) {
+            try {
+                // 1/异步调用
+                // 2重试次数
+                ProducerRecord producerRecord = new ProducerRecord("kafka-boot", "foo" + i);
+                ProducerFactory factory = kafkaTemplate.getProducerFactory();
+                Producer producer = factory.createProducer();
+                producer.send(producerRecord, new Callback() {
+                    @Override
+                    public void onCompletion(RecordMetadata recordMetadata, Exception e) {
+                        if (e == null) {
+                            //成功
+                        }else if(e instanceof RetriableException){
+                            // 可重试
+                        }else{
+                            // 不可重试
+                        }
+                    }
+                });
+                //kafkaTemplate.send("kafka-boot", "0", "foo" + i).get();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return "success";
+    }
+
+    /**
+     * 同步发送
+     *
+     * @return
+     */
+    @RequestMapping("/sendKafka2")
+    public String sendKafka2() {
         for (int i = 0; i < 10; i++) {
             try {
                 // 1/异步调用
