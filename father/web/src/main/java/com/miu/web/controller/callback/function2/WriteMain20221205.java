@@ -8,15 +8,15 @@ import java.io.FileWriter;
  */
 public class WriteMain20221205 {
     public static void main(String[] args) {
-       /* Write20221205 write20221205 = new Write20221205();
+        Write20221205 write20221205 = new Write20221205();
         write20221205.write("D:\\fw.txt", fileWriter -> {
             try{
                 fileWriter.write("write 20221205");
             }catch (Exception e){
 
             }
-        });*/
-        Write20221205 write20221205 = new Write20221205();
+        });
+     /*   Write20221205 write20221205 = new Write20221205();
         write20221205.write("D:\\fw.txt", new Callback1205() {
             @Override
             public void append(FileWriter fileWriter) {
@@ -27,6 +27,6 @@ public class WriteMain20221205 {
                 }
 
             }
-        });
+        });*/
     }
 }
