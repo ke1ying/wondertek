@@ -8,7 +8,7 @@ public class User implements Observer {
     private String name;
     private String msg;
 
-    User(String name) {
+    public User(String name) {
         this.name = name;
     }
 

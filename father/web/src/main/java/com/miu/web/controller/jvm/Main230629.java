@@ -1,12 +1,17 @@
 package com.miu.web.controller.jvm;
 
+import com.miu.entity.User;
+
 /**
  * @author keying
- * @date 2023-06-29 09:18:43
  */
 public class Main230629 {
 
-    public int computer(){
+    public static final int initDataFinal = 666;
+    public static User user = new User();
+    public int initData = 666;
+
+    public int computer() {
         int a = 1;
         int b = 2;
         int c = a + b;
@@ -19,7 +24,7 @@ public class Main230629 {
         main230629.sout();
     }
 
-    private void sout(){
+    private void sout() {
         System.out.println("通过自定义加载器，反射调用的方法");
     }
 }

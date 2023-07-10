@@ -77,5 +77,13 @@ public class MyClassLoaderTest {
         Method method = clazz.getDeclaredMethod("sout", null);
         method.invoke(obj,null);
         System.out.println(clazz.getClassLoader().getClass().getName());
+
+
+        MyClassLoader myClassLoader1 = new MyClassLoader("D:/test1");
+        Class clazz1 = myClassLoader1.loadClass("com.miu.web.controller.jvm.Main230629");
+        Object obj1 = clazz1.newInstance();
+        Method method1 = clazz1.getDeclaredMethod("sout", null);
+        method1.invoke(obj1,null);
+        System.out.println(clazz1.getClassLoader().getClass().getName());
     }
 }
